@@ -20,23 +20,76 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--secondary-text-color);
   background-color: var(--backround-color);
 }
 
+.container{
+  width: 1158px ;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
 /* studio */
+
 /* header */
+.page-header-container{
+  display: flex;
+  align-items: center;
+}
+.page-header{
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #E7E9FC;
+}
+.page-navigation{
+  display: flex;
+  align-items: center;
+  column-gap: 76px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
 /* logo */
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-hover);
 }
@@ -45,9 +98,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
@@ -66,8 +116,14 @@ body {
   color: var(--accent-color);
 }
 /* contact */
+.contacts{
+  margin-left: auto;
+}
 .contact{
   font-style: normal;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
 .contact-link {
   font-weight: 400;
@@ -83,9 +139,15 @@ body {
 /* hero */
 .hero {
   background-color: var(--primary-text-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -94,23 +156,39 @@ body {
   color: var(--backround-color);
 }
 .main-button {
+  border: none;
+  display: block;
+  margin: 48px auto 0 auto;
+  align-items: center;
+  padding: 16px 32px;
+  min-width: 169px;
+  border-radius: 4px;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--backround-color);
   background-color: var(--text-color-hover);
+  border-color: var(--text-color-hover);
 }
 
 .main-button:hover,
 .main-button:focus {
   background-color: var(--accent-color);
 }
+
 /* plyusi companii */
+.companii-list{
+  display: flex;
+  column-gap: 24px;
+}
+.companii-item{
+  min-width: 264px;
+}
+
 .companii-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -174,8 +252,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-btn-filtres);
@@ -197,9 +273,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.50;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.04em;
 color:var(--text-color-hover);
 background-color: var(--background-btn-filtres);
