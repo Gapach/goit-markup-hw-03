@@ -76,7 +76,6 @@ body {
 .page-navigation{
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 .menu{
   display: flex;
@@ -88,6 +87,7 @@ body {
 }
 /* logo */
 .logo {
+  margin-right: 76px;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
